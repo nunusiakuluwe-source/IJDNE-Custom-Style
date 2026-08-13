@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0.2"
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0"
        class="in-text"
        default-locale="en-US"
        demote-non-dropping-particle="never">
@@ -7,6 +7,7 @@
     <title>International Journal of Design &amp; Nature and Ecodynamics (IJDNE) - Custom</title>
     <title-short>IJDNE-Custom</title-short>
     <id>http://www.zotero.org/styles/ijdne-custom</id>
+    <link href="http://www.zotero.org/styles/ijdne-custom" rel="self"/>
     <link href="https://www.iieta.org/journals/ijdne/Instructions%20for%20Authors" rel="documentation"/>
     <link href="https://www.iieta.org/Journals/IJDNE" rel="homepage"/>
     <updated>2026-08-13T00:00:00+00:00</updated>
@@ -22,18 +23,18 @@
       <term name="editor" form="short">ed</term>
       <term name="editors">editors</term>
       <term name="editors" form="short">eds</term>
-      <month form="short" name="1">Jan.</month>
-      <month form="short" name="2">Feb.</month>
-      <month form="short" name="3">Mar.</month>
-      <month form="short" name="4">Apr.</month>
-      <month form="short" name="5">May</month>
-      <month form="short" name="6">Jun.</month>
-      <month form="short" name="7">Jul.</month>
-      <month form="short" name="8">Aug.</month>
-      <month form="short" name="9">Sep.</month>
-      <month form="short" name="10">Oct.</month>
-      <month form="short" name="11">Nov.</month>
-      <month form="short" name="12">Dec.</month>
+      <term name="month" form="short" name="1">Jan.</term>
+      <term name="month" form="short" name="2">Feb.</term>
+      <term name="month" form="short" name="3">Mar.</term>
+      <term name="month" form="short" name="4">Apr.</term>
+      <term name="month" form="short" name="5">May</term>
+      <term name="month" form="short" name="6">Jun.</term>
+      <term name="month" form="short" name="7">Jul.</term>
+      <term name="month" form="short" name="8">Aug.</term>
+      <term name="month" form="short" name="9">Sep.</term>
+      <term name="month" form="short" name="10">Oct.</term>
+      <term name="month" form="short" name="11">Nov.</term>
+      <term name="month" form="short" name="12">Dec.</term>
     </terms>
   </locale>
 
