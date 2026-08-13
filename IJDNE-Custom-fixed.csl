@@ -20,21 +20,10 @@
       <term name="page" form="short">p.</term>
       <term name="chapter" form="short">chap.</term>
       <term name="editor">editor</term>
-      <term name="editor" form="short">ed</term>
-      <term name="editors">editors</term>
-      <term name="editors" form="short">eds</term>
-      <term name="month" form="short" name="1">Jan.</term>
-      <term name="month" form="short" name="2">Feb.</term>
-      <term name="month" form="short" name="3">Mar.</term>
-      <term name="month" form="short" name="4">Apr.</term>
-      <term name="month" form="short" name="5">May</term>
-      <term name="month" form="short" name="6">Jun.</term>
-      <term name="month" form="short" name="7">Jul.</term>
-      <term name="month" form="short" name="8">Aug.</term>
-      <term name="month" form="short" name="9">Sep.</term>
-      <term name="month" form="short" name="10">Oct.</term>
-      <term name="month" form="short" name="11">Nov.</term>
-      <term name="month" form="short" name="12">Dec.</term>
+      <term name="editor" form="short">
+        <single>ed</single>
+        <multiple>eds</multiple>
+      </term>
     </terms>
   </locale>
 
