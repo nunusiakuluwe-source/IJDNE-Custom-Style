@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0.2"
+       class="in-text"
+       default-locale="en-US"
+       demote-non-dropping-particle="never">
+  <info>
+    <title>International Journal of Design &amp; Nature and Ecodynamics (IJDNE) - Custom</title>
+    <title-short>IJDNE-Custom</title-short>
+    <id>http://www.zotero.org/styles/ijdne-custom</id>
+    <link href="https://www.iieta.org/journals/ijdne/Instructions%20for%20Authors" rel="documentation"/>
+    <link href="https://www.iieta.org/Journals/IJDNE" rel="homepage"/>
+    <updated>2026-08-13T00:00:00+00:00</updated>
+    <rights license="http://creativecommons.org/licenses/by/4.0/">Based on the IJDNE Instructions for Authors and template examples.</rights>
+  </info>
+
+  <locale xml:lang="en">
+    <terms>
+      <term name="page">p.</term>
+      <term name="page" form="short">p.</term>
+      <term name="chapter" form="short">chap.</term>
+      <term name="editor">editor</term>
+      <term name="editor" form="short">ed</term>
+      <term name="editors">editors</term>
+      <term name="editors" form="short">eds</term>
+      <month form="short" name="1">Jan.</month>
+      <month form="short" name="2">Feb.</month>
+      <month form="short" name="3">Mar.</month>
+      <month form="short" name="4">Apr.</month>
+      <month form="short" name="5">May</month>
+      <month form="short" name="6">Jun.</month>
+      <month form="short" name="7">Jul.</month>
+      <month form="short" name="8">Aug.</month>
+      <month form="short" name="9">Sep.</month>
+      <month form="short" name="10">Oct.</month>
+      <month form="short" name="11">Nov.</month>
+      <month form="short" name="12">Dec.</month>
+    </terms>
+  </locale>
+
+  <macro name="author">
+    <names variable="author">
+      <name name-as-sort-order="all"
+            sort-separator=", "
+            initialize-with="."
+            delimiter=", "
+            delimiter-precedes-last="always"/>
+    </names>
+  </macro>
+
+  <macro name="issued">
+    <date variable="issued">
+      <date-part name="year" prefix="(" suffix=")."/>
+    </date>
+  </macro>
+
+  <macro name="author-year">
+    <group delimiter=" ">
+      <text macro="author"/>
+      <text macro="issued"/>
+    </group>
+  </macro>
+
+  <macro name="title">
+    <text variable="title"/>
+  </macro>
+
+  <macro name="doi">
+    <text variable="DOI" prefix="https://doi.org/"/>
+  </macro>
+
+  <macro name="access-date">
+    <date variable="accessed" prefix="accessed on ">
+      <date-part name="month" form="short"/>
+      <date-part name="day" prefix=" "/>
+      <date-part name="year" prefix=", "/>
+    </date>
+  </macro>
+
+  <macro name="article-locators">
+    <group delimiter="">
+      <text variable="volume"/>
+      <text variable="issue" prefix="(" suffix=")"/>
+    </group>
+  </macro>
+
+  <macro name="article-journal">
+    <group delimiter=" ">
+      <group delimiter=" ">
+        <text macro="author-year"/>
+        <text macro="title" suffix="."/>
+      </group>
+      <group delimiter="">
+        <text variable="container-title" suffix=", "/>
+        <text macro="article-locators"/>
+        <text variable="page" prefix=": " suffix="."/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="conference">
+    <group delimiter=" ">
+      <text macro="author-year"/>
+      <text macro="title" suffix="."/>
+      <group delimiter="">
+        <text variable="event" suffix=", "/>
+        <text variable="event-place" suffix=", "/>
+        <text variable="page" prefix="pp. " suffix="."/>
+      </group>
+    </group>
+  </macro>
+
+  <macro name="book">
+    <group delimiter=" ">
+      <text macro="author-year"/>
+      <text macro="title" suffix="."/>
+      <group delimiter=", ">
+        <text variable="publisher"/>
+        <text variable="publisher-place"/>
+        <text variable="page"/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="chapter">
+    <group delimiter=" ">
+      <text macro="author-year"/>
+      <text macro="title" suffix="."/>
+      <group delimiter=" ">
+        <text value="In:"/>
+        <names variable="editor">
+          <name name-as-sort-order="all"
+                sort-separator=", "
+                initialize-with="."
+                delimiter=", "
+                delimiter-precedes-last="always"/>
+          <label form="short" prefix=" (" suffix=")"/>
+        </names>
+        <text variable="container-title" suffix="."/>
+      </group>
+      <group delimiter=", ">
+        <text variable="publisher"/>
+        <text variable="publisher-place"/>
+        <text variable="page"/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="thesis">
+    <group delimiter=" ">
+      <text macro="author-year"/>
+      <text macro="title" suffix="."/>
+      <group delimiter=" ">
+        <text variable="genre" suffix="."/>
+        <text variable="publisher"/>
+        <text variable="publisher-place" suffix="."/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="report">
+    <group delimiter=" ">
+      <text macro="author-year"/>
+      <text macro="title" suffix="."/>
+      <text variable="genre"/>
+      <text variable="number"/>
+      <group delimiter=", ">
+        <text variable="publisher"/>
+        <text variable="publisher-place"/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="webpage">
+    <group delimiter=" ">
+      <text macro="author"/>
+      <text macro="title" suffix="."/>
+      <text variable="URL"/>
+      <text macro="access-date"/>
+    </group>
+  </macro>
+
+  <macro name="software">
+    <group delimiter=" ">
+      <text macro="author"/>
+      <text macro="title" suffix="."/>
+      <text variable="URL"/>
+      <text macro="access-date"/>
+    </group>
+  </macro>
+
+  <macro name="fallback">
+    <group delimiter=" ">
+      <text macro="author"/>
+      <text macro="issued"/>
+      <text macro="title" suffix="."/>
+      <group delimiter=", ">
+        <text variable="publisher"/>
+        <text variable="publisher-place"/>
+        <text variable="page"/>
+      </group>
+      <text macro="doi"/>
+    </group>
+  </macro>
+
+  <macro name="no-author-prefix">
+    <choose>
+      <if variable="author">
+        <text macro="author-year"/>
+      </if>
+      <else>
+        <text macro="title" suffix="."/>
+        <text macro="issued" prefix=" "/>
+      </else>
+    </choose>
+  </macro>
+
+  <citation>
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
+    </layout>
+  </citation>
+
+  <bibliography hanging-indent="true" second-field-align="flush">
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout>
+      <text variable="citation-number" prefix="[" suffix="]"/>
+      <text macro="bibliography-entry" prefix=" "/>
+    </layout>
+  </bibliography>
+
+  <macro name="bibliography-entry">
+    <choose>
+      <if type="article-journal">
+        <choose>
+          <if variable="author">
+            <text macro="article-journal"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <group delimiter="">
+                <text variable="container-title" suffix=", "/>
+                <text macro="article-locators"/>
+                <text variable="page" prefix=": " suffix="."/>
+              </group>
+              <text macro="doi"/>
+            </group>
+          </else>
+        </choose>
+      </if>
+      <else-if type="paper-conference">
+        <choose>
+          <if variable="author">
+            <text macro="conference"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <text variable="event" suffix="."/>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="chapter">
+        <choose>
+          <if variable="author">
+            <text macro="chapter"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <text variable="container-title" suffix="."/>
+              <group delimiter=", ">
+                <text variable="publisher"/>
+                <text variable="publisher-place"/>
+                <text variable="page"/>
+              </group>
+              <text macro="doi"/>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="book">
+        <choose>
+          <if variable="author">
+            <text macro="book"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <group delimiter=", ">
+                <text variable="publisher"/>
+                <text variable="publisher-place"/>
+                <text variable="page"/>
+              </group>
+              <text macro="doi"/>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="thesis">
+        <choose>
+          <if variable="author">
+            <text macro="thesis"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <text variable="genre" suffix="."/>
+              <text variable="publisher" suffix="."/>
+              <text variable="publisher-place" suffix="."/>
+              <text macro="doi"/>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="report">
+        <choose>
+          <if variable="author">
+            <text macro="report"/>
+          </if>
+          <else>
+            <group delimiter=" ">
+              <text macro="title" suffix="."/>
+              <text macro="issued"/>
+              <text variable="genre"/>
+              <text variable="number"/>
+              <group delimiter=", ">
+                <text variable="publisher"/>
+                <text variable="publisher-place"/>
+              </group>
+              <text macro="doi"/>
+            </group>
+          </else>
+        </choose>
+      </else-if>
+      <else-if type="software">
+        <text macro="software"/>
+      </else-if>
+      <else-if type="webpage">
+        <text macro="webpage"/>
+      </else-if>
+      <else>
+        <text macro="fallback"/>
+      </else>
+    </choose>
+  </macro>
+</style>
